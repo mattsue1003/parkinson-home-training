@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>巴金森居家訓練：大聲說話 × 大動作｜愛迪樂 鍾孟修 職能治療師</title>
+<meta name="description" content="14 支 3D 示範影片，跟著影片在家練習大聲說話與大動作：長音、高低音滑音、每日 10 句、地板到天花板、向前／側邊／向後大步、搖擺伸手、坐到站、大步走、大轉身。">
+<meta property="og:title" content="巴金森居家訓練：大聲說話 × 大動作">
+<meta property="og:description" content="14 支 3D 示範影片＋練習工具，每天在家跟著練。">
+<meta property="og:image" content="img/poster-b1.jpg">
+<meta name="theme-color" content="#028090">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #028090; --teal-d: #0A5A63; --teal-m: #13707D; --teal-l: #E3F2F2; --teal-ll: #F2F9F9;
+    --or: #E8552D; --or-d: #C2401C; --or-l: #FDEEE8; --am: #F4A93C;
+    --ink: #12343B; --muted: #587076; --line: #D9E8E9; --bg: #F6FAFA; --card: #FFFFFF;
+    --r: 22px; --shadow: 0 10px 30px rgba(10, 60, 66, .08), 0 2px 6px rgba(10, 60, 66, .05);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Noto Sans TC', system-ui, -apple-system, 'PingFang TC', 'Microsoft JhengHei', sans-serif; line-height: 1.75; font-size: 18px; }
+  a { color: var(--teal-m); text-underline-offset: 3px; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--or); outline-offset: 3px; border-radius: 8px; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  .hide { display: none !important; }
+
+  /* 頁首 */
+  .top { background: linear-gradient(180deg, #E4F2F2 0%, var(--bg) 100%); border-bottom: 1px solid var(--line); }
+  .brandbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0 0; }
+  .bm { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .bm b { font-size: 30px; font-weight: 900; color: var(--or); letter-spacing: .12em; }
+  .bm span { font-size: 15px; font-weight: 700; color: var(--muted); letter-spacing: .04em; }
+  .pill { display: inline-flex; align-items: center; background: var(--teal); color: #fff; font-weight: 700; font-size: 14px; letter-spacing: .08em; padding: 4px 14px; border-radius: 999px; white-space: nowrap; }
+  .hero { padding: 22px 0 30px; display: grid; gap: 14px; }
+  h1 { margin: 0; font-size: clamp(30px, 5vw, 46px); line-height: 1.25; font-weight: 900; color: var(--teal-d); }
+  h1 small { display: block; font-size: .48em; font-weight: 900; color: var(--or); letter-spacing: .08em; margin-bottom: 8px; }
+  .lead { margin: 0; max-width: 840px; font-size: 18px; color: #2A4950; }
+  .lead b { color: var(--or-d); }
+  .how { list-style: none; margin: 6px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .how li { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 12px 14px; font-size: 16px; line-height: 1.5; font-weight: 700; display: flex; gap: 10px; align-items: center; }
+  .how li i { font-style: normal; font-size: 24px; flex: none; }
+
+  /* 安全提醒 */
+  .safety { margin: 24px 0 0; display: flex; gap: 14px; align-items: flex-start; background: var(--or-l); border: 1.5px solid #F4C6B4; border-radius: var(--r); padding: 16px 20px; }
+  .safety .ic { flex: none; width: 42px; height: 42px; border-radius: 12px; background: var(--or); color: #fff; display: grid; place-items: center; font-size: 24px; font-weight: 900; }
+  .safety h2 { margin: 0 0 4px; font-size: 19px; color: var(--or-d); }
+  .safety ul { margin: 0; padding-left: 20px; font-size: 17px; }
+  .safety li + li { margin-top: 2px; }
+
+  /* 系列切換 */
+  .series { margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 6px; }
+  .series button { cursor: pointer; border: 0; background: transparent; border-radius: 15px; padding: 12px 8px; font-weight: 900; font-size: 18px; line-height: 1.3; color: var(--muted); }
+  .series button small { display: block; font-size: 13px; font-weight: 700; opacity: .85; }
+  .series button[aria-selected="true"] { background: var(--teal); color: #fff; }
+  .series button[aria-selected="true"][data-s="LOUD"] { background: var(--or); }
+
+  .tabs { margin: 14px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .tab { position: relative; cursor: pointer; text-align: left; border: 1.5px solid var(--line); background: var(--card); border-radius: 18px; padding: 9px; display: flex; gap: 12px; align-items: center; min-height: 82px; }
+  .tab:hover { border-color: #A9D2D5; }
+  .tab .th { width: 62px; height: 62px; border-radius: 12px; object-fit: cover; flex: none; background: var(--teal-l); display: grid; place-items: center; font-size: 12px; font-weight: 700; color: var(--muted); text-align: center; line-height: 1.3; }
+  .tab .no { font-size: 13px; font-weight: 900; color: var(--muted); letter-spacing: .06em; display: block; line-height: 1.3; }
+  .tab .nm { font-size: 17px; font-weight: 900; line-height: 1.35; display: block; }
+  .tab .ok { position: absolute; top: 6px; right: 8px; font-size: 13px; font-weight: 900; color: var(--teal); }
+  .tab[aria-selected="true"] { border-color: var(--teal); background: var(--teal-ll); box-shadow: 0 0 0 3px rgba(2, 128, 144, .16); }
+  .tab[aria-selected="true"] .no { color: var(--teal); }
+  .tab.soon .th { background: repeating-linear-gradient(135deg, #EEF5F5 0 8px, #E4EEEE 8px 16px); }
+
+  /* 主面板 */
+  .panel { margin: 16px 0 0; background: var(--card); border-radius: 28px; box-shadow: var(--shadow); border: 1px solid var(--line); padding: 22px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 30px; align-items: start; }
+  .player { position: relative; }
+  .frame { position: relative; aspect-ratio: 1 / 1; border-radius: 20px; overflow: hidden; background: #E9EEEE; }
+  .frame video { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .bigplay { position: absolute; inset: 0; display: grid; place-items: center; border: 0; background: rgba(18, 52, 59, .2); cursor: pointer; }
+  .bigplay span { display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px 16px 22px; border-radius: 999px; background: rgba(255, 255, 255, .96); box-shadow: 0 8px 26px rgba(0, 0, 0, .2); font-size: 20px; font-weight: 900; color: var(--teal-d); }
+  .bigplay svg { width: 30px; height: 30px; fill: var(--or); }
+  .playing .bigplay { opacity: 0; pointer-events: none; }
+  .soonbox { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 30px; background: repeating-linear-gradient(135deg, #EEF5F5 0 14px, #E6EFEF 14px 28px); }
+  .soonbox b { display: block; font-size: 24px; color: var(--teal-d); }
+  .soonbox span { color: var(--muted); font-size: 16px; }
+  .ctrl { display: flex; align-items: center; gap: 8px; margin-top: 12px; }
+  .ctrl > button { flex: none; height: 46px; min-width: 46px; border-radius: 14px; border: 1.5px solid var(--line); background: #fff; cursor: pointer; display: grid; place-items: center; padding: 0 10px; font-weight: 700; font-size: 15px; color: var(--teal-d); }
+  .ctrl > button:hover { border-color: var(--teal); }
+  .ctrl > button.on { background: var(--teal-l); border-color: var(--teal); }
+  .ctrl svg { width: 20px; height: 20px; fill: var(--teal-d); }
+  .bar { position: relative; flex: 1; height: 46px; cursor: pointer; display: flex; align-items: center; touch-action: none; }
+  .track { position: relative; width: 100%; height: 10px; border-radius: 99px; background: #E3ECEC; overflow: hidden; }
+  .fill { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--teal); border-radius: 99px; }
+  .tick { position: absolute; top: 0; bottom: 0; width: 3px; background: #fff; }
+  .time { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 86px; text-align: right; }
+
+  .info .kicker { margin: 2px 0 0; font-size: 15px; font-weight: 900; color: var(--or); letter-spacing: .1em; }
+  .info h2 { margin: 2px 0 12px; font-size: clamp(28px, 3.4vw, 36px); line-height: 1.3; font-weight: 900; color: var(--teal-d); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .chip { display: inline-flex; align-items: center; font-size: 15px; font-weight: 700; padding: 5px 13px; border-radius: 999px; background: var(--teal-l); color: var(--teal-d); }
+  .chip:last-child { background: var(--or-l); color: var(--or-d); }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+  .steps button { width: 100%; text-align: left; cursor: pointer; border: 1.5px solid var(--line); background: #fff; border-radius: 16px; padding: 11px 14px; display: flex; gap: 14px; align-items: flex-start; }
+  .steps button:hover { border-color: #A9D2D5; }
+  .steps button[disabled] { cursor: default; }
+  .steps .n { flex: none; width: 36px; height: 36px; border-radius: 10px; background: var(--teal-l); color: var(--teal-d); font-weight: 900; display: grid; place-items: center; margin-top: 1px; }
+  .steps .safe .n { background: var(--or-l); color: var(--or-d); }
+  .steps .go .n { background: var(--am); color: #fff; }
+  .steps .t { font-size: 17px; line-height: 1.65; }
+  .steps .t b { color: var(--or-d); font-weight: 700; }
+  .steps .now { display: none; font-size: 13px; font-weight: 700; color: var(--teal); letter-spacing: .08em; }
+  .steps li.on button { border-color: var(--teal); background: var(--teal-ll); }
+  .steps li.on .n { background: var(--teal); color: #fff; }
+  .steps li.on .now { display: block; }
+  .tip { margin: 14px 0 0; font-size: 15px; color: var(--muted); }
+  .pager { display: flex; justify-content: space-between; gap: 10px; margin-top: 18px; }
+  .pager button { cursor: pointer; border: 1.5px solid var(--line); background: #fff; border-radius: 999px; padding: 9px 18px; font-weight: 700; font-size: 16px; color: var(--teal-d); }
+  .pager button:hover { border-color: var(--teal); }
+  .pager button[disabled] { visibility: hidden; }
+
+  /* 練習工具 */
+  .tools { margin: 16px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .tool { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 20px; box-shadow: var(--shadow); }
+  .tool h3 { margin: 0 0 4px; font-size: 20px; color: var(--teal-d); display: flex; align-items: center; gap: 8px; }
+  .tool .sub { margin: 0 0 14px; font-size: 15px; color: var(--muted); line-height: 1.6; }
+  .big { font-size: 64px; font-weight: 900; line-height: 1; color: var(--teal-d); font-variant-numeric: tabular-nums; text-align: center; }
+  .big small { font-size: 26px; color: var(--muted); font-weight: 700; }
+  .btns { display: flex; gap: 10px; justify-content: center; margin-top: 16px; flex-wrap: wrap; }
+  .btn { cursor: pointer; border: 0; border-radius: 16px; padding: 14px 22px; font-weight: 900; font-size: 19px; background: var(--teal); color: #fff; min-width: 120px; }
+  .btn.or { background: var(--or); }
+  .btn.ghost { background: var(--teal-l); color: var(--teal-d); min-width: 0; }
+  .btn:disabled { opacity: .45; cursor: default; }
+  .done { margin-top: 12px; text-align: center; font-weight: 900; color: var(--teal); font-size: 17px; min-height: 1.6em; }
+  .ring { position: relative; width: 170px; height: 170px; margin: 0 auto; }
+  .ring svg { position: absolute; inset: 0; transform: rotate(-90deg); }
+  .ring .big { position: absolute; inset: 0; display: grid; place-items: center; }
+  /* 音量計 */
+  .meter { position: relative; height: 54px; border-radius: 16px; background: linear-gradient(90deg, #E6EEEE 0 var(--lo, 45%), #D7EEEF var(--lo, 45%) var(--hi, 86%), #FBE3DA var(--hi, 86%) 100%); overflow: hidden; }
+  .meter .lv { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: #9FB3B6; border-radius: 16px; transition: width .06s linear; }
+  .meter .lv.ok { background: var(--teal); } .meter .lv.hi { background: var(--or); }
+  .zones { display: grid; grid-template-columns: var(--lo, 45%) calc(var(--hi, 86%) - var(--lo, 45%)) 1fr; font-size: 14px; font-weight: 900; color: var(--muted); margin-top: 6px; text-align: center; }
+  .zones span:nth-child(2) { color: var(--teal); } .zones span:nth-child(3) { color: var(--or-d); }
+  .stat { display: flex; justify-content: space-around; margin-top: 14px; text-align: center; }
+  .stat div { font-size: 14px; color: var(--muted); font-weight: 700; }
+  .stat b { display: block; font-size: 34px; color: var(--teal-d); font-variant-numeric: tabular-nums; line-height: 1.2; }
+  .note { font-size: 14px; color: var(--muted); margin: 12px 0 0; line-height: 1.6; }
+
+  /* 進階 */
+  .ladder { margin: 34px 0 0; background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 22px 24px; }
+  .ladder h2 { margin: 0 0 6px; font-size: 24px; color: var(--teal-d); }
+  .ladder > p { margin: 0 0 14px; color: #2A4950; }
+  .steps5 { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .steps5 li { background: var(--or-l); border-radius: 16px; padding: 12px 12px 14px; }
+  .steps5 b { display: block; font-size: 18px; color: var(--or-d); }
+  .steps5 span { font-size: 15px; line-height: 1.55; display: block; }
+
+  .sources { margin: 26px 0 0; padding: 22px 24px; border-radius: var(--r); background: #fff; border: 1px solid var(--line); }
+  .sources h3 { margin: 0 0 8px; font-size: 18px; color: var(--teal-d); }
+  .sources ul { margin: 0; padding-left: 20px; font-size: 15px; color: #2A4950; }
+  .sources p { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
+  footer { margin: 30px 0 0; padding: 24px 0 40px; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 15px; }
+  footer .bm { justify-content: center; }
+
+  @media (max-width: 900px) {
+    .panel { grid-template-columns: 1fr; padding: 14px; gap: 18px; border-radius: 24px; }
+    .tabs { grid-template-columns: repeat(2, 1fr); }
+    .how { grid-template-columns: repeat(2, 1fr); }
+    .steps5 { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 0 16px; }
+    .bm b { font-size: 26px; }
+    .series button { font-size: 16px; padding: 10px 4px; }
+    .tabs { gap: 8px; }
+    .tab { gap: 8px; padding: 7px; min-height: 72px; }
+    .tab .th { width: 50px; height: 50px; }
+    .tab .nm { font-size: 16px; }
+    .time { display: none; }
+    .how li { font-size: 15px; padding: 10px; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brandbar">
+      <div class="bm"><b>愛迪樂</b><span>鍾孟修 職能治療師</span></div>
+      <span class="pill">居家練習影片</span>
+    </div>
+    <div class="hero">
+      <h1><small>大聲說話 × 大動作</small>巴金森居家訓練</h1>
+      <p class="lead">巴金森氏症常讓<b>聲音越來越小</b>、<b>動作越來越小</b>，自己卻不容易察覺。這 14 支 3D 示範影片參考 LSVT 治療理念設計：說話要「大聲」，動作要「做到最大」。選一個動作、按下播放，跟著影片一起練。</p>
+      <ul class="how">
+        <li><i>📅</i>每週至少練 4 天</li>
+        <li><i>💊</i>選吃藥後、狀態好的時段</li>
+        <li><i>💪</i>用八成以上的力氣</li>
+        <li><i>😮</i>覺得太誇張，其實剛剛好</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <aside class="safety" role="note">
+    <span class="ic" aria-hidden="true">!</span>
+    <div>
+      <h2>練習前請先看</h2>
+      <ul>
+        <li>開始前請先由治療師評估；大聲說話練習建議經<b>語言治療師</b>評估。</li>
+        <li>站姿動作身旁一定要有<b>穩固、沒有輪子的椅背</b>或流理台，最好有家人陪。</li>
+        <li>大聲<b>不是吼叫</b>：喉嚨痛、聲音沙啞就停下來休息、喝水。</li>
+        <li>出現頭暈、胸悶、疼痛或快跌倒，請立刻停止，並與醫師或治療師聯絡。</li>
+      </ul>
+    </div>
+  </aside>
+
+  <nav class="series" role="tablist" aria-label="訓練類別">
+    <button role="tab" data-s="LOUD">🗣 大聲說話<small>L1–L4 坐著練</small></button>
+    <button role="tab" data-s="BIG">🚶 大動作<small>B1–B7 每日 7 招</small></button>
+    <button role="tab" data-s="DAILY">🏠 日常大動作<small>F1–F3 生活應用</small></button>
+  </nav>
+  <div class="tabs" id="tabs" role="tablist" aria-label="動作"></div>
+
+  <section class="panel" id="panel" role="tabpanel" aria-live="polite">
+    <div class="player" id="player">
+      <div class="frame">
+        <video id="vid" playsinline preload="metadata"></video>
+        <button class="bigplay" id="bigplay" aria-label="播放影片（有聲音）"><span><svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg>播放影片</span></button>
+        <div class="soonbox hide" id="soon"><div><b>影片製作中</b><span>完成後會放在這裡，步驟可以先看</span></div></div>
+      </div>
+      <div class="ctrl" id="ctrl">
+        <button id="pp" aria-label="播放"></button>
+        <div class="bar" id="bar" role="slider" aria-label="影片進度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+          <div class="track"><div class="fill" id="fill"></div><div id="ticks"></div></div>
+        </div>
+        <span class="time" id="time">0:00 / 0:00</span>
+        <button id="slow" aria-pressed="false" title="放慢速度">慢速</button>
+        <button id="fs" aria-label="全螢幕"><svg viewBox="0 0 24 24"><path d="M4 9V4h5v2H6v3zm11-5h5v5h-2V6h-3zM4 15h2v3h3v2H4zm14 3v-3h2v5h-5v-2z"/></svg></button>
+      </div>
+    </div>
+    <div class="info">
+      <p class="kicker" id="kicker"></p>
+      <h2 id="title"></h2>
+      <div class="chips" id="chips"></div>
+      <ol class="steps" id="steps"></ol>
+      <p class="tip" id="tip">點步驟可以直接跳到影片中的那一段。</p>
+      <div class="pager"><button id="prev"></button><button id="next"></button></div>
+    </div>
+  </section>
+
+  <section class="tools" id="tools" aria-label="練習工具">
+    <div class="tool hide" id="micTool">
+      <h3>🎤 音量計</h3>
+      <p class="sub">練習時打開，看看聲音有沒有到「大聲剛好」。先按「校準」，用平常說話的聲音說「啊」3 秒。</p>
+      <div class="meter" id="meter"><div class="lv" id="lv"></div></div>
+      <div class="zones"><span>太小聲</span><span>大聲剛好 ✓</span><span>太用力</span></div>
+      <div class="stat"><div>這次長音<b id="sus">0.0</b>秒</div><div>最長紀錄<b id="best">0.0</b>秒</div></div>
+      <div class="btns"><button class="btn or" id="micBtn">打開麥克風</button><button class="btn ghost" id="calBtn" disabled>校準</button></div>
+      <p class="note" id="micMsg">聲音只在你的手機上分析，不會錄音，也不會上傳。手機麥克風的數字只是參考，請以治療師的建議為準。</p>
+    </div>
+    <div class="tool hide" id="holdTool">
+      <h3>⏱ 停住 10 秒</h3>
+      <p class="sub">按下開始，停住動作，<b>跟著大聲數出來</b>。</p>
+      <div class="ring"><svg viewBox="0 0 170 170"><circle cx="85" cy="85" r="74" fill="none" stroke="#E3ECEC" stroke-width="14"/><circle id="hring" cx="85" cy="85" r="74" fill="none" stroke="#028090" stroke-width="14" stroke-linecap="round" stroke-dasharray="465" stroke-dashoffset="465"/></svg><div class="big" id="hnum">10</div></div>
+      <div class="btns"><button class="btn" id="holdBtn">開始 10 秒</button></div>
+    </div>
+    <div class="tool" id="cntTool">
+      <h3>🔢 今天做了幾次</h3>
+      <p class="sub" id="cntSub">每做完一次按一下，數字會記在這支手機上。</p>
+      <div class="big" id="cnt">0<small id="cntGoal"></small></div>
+      <div class="btns"><button class="btn ghost" id="minus" aria-label="減一">－1</button><button class="btn or" id="plus">＋1 做完一次</button><button class="btn ghost" id="reset">歸零</button></div>
+      <div class="done" id="cntDone"></div>
+    </div>
+  </section>
+
+  <section class="ladder">
+    <h2>進階：把大聲用到生活裡（L5 階層練習）</h2>
+    <p>L1–L4 練熟後，把「大聲」一步步帶進日常說話。每一階都用長音「啊」的力氣，<b>由語言治療師依程度安排進度</b>。</p>
+    <ol class="steps5">
+      <li><b>① 單字</b><span>水、茶、好、對、早安</span></li>
+      <li><b>② 片語</b><span>喝杯水、出去走走、謝謝你</span></li>
+      <li><b>③ 句子</b><span>我今天想吃麵。等一下要去公園。</span></li>
+      <li><b>④ 朗讀</b><span>大聲唸報紙標題、一小段文章</span></li>
+      <li><b>⑤ 對話</b><span>打電話、點餐、和家人聊天都用大聲</span></li>
+    </ol>
+  </section>
+
+  <section class="sources">
+    <h3>參考資料</h3>
+    <ul>
+      <li><a href="https://academy.pubs.asha.org/wp-content/uploads/2014/03/cred-pvid-implscid2p7.pdf" target="_blank" rel="noopener">ASHA：LSVT LOUD 臨床協定表</a></li>
+      <li><a href="https://www.uwlax.edu/globalassets/academics/grad/occupational-therapy/cats/2016-17/lsvt-big.pdf" target="_blank" rel="noopener">University of Wisconsin–La Crosse：LSVT BIG 實證摘要</a></li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5346384/" target="_blank" rel="noopener">PubMed Central：LSVT BIG 介入協定</a></li>
+      <li><a href="https://clinicaltrials.gov/study/NCT07730073" target="_blank" rel="noopener">ClinicalTrials.gov：LSVT LOUD 對巴金森語音的研究</a></li>
+    </ul>
+    <p>本頁為居家練習示範，不能取代醫師與治療師的評估和個別化療程。LSVT LOUD® 與 LSVT BIG® 為 LSVT Global 的註冊商標，本頁內容參考其治療理念設計，並非官方課程。</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <div class="bm"><b>愛迪樂</b><span>鍾孟修 職能治療師</span></div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const vid = $('vid');
+const SER = {LOUD: '大聲說話', BIG: '大動作', DAILY: '日常大動作'};
+const ICON = {
+  play: '<svg viewBox="0 0 24 24"><path d="M6 4l15 8-15 8z"/></svg>',
+  pause: '<svg viewBox="0 0 24 24"><path d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg>',
+};
+let cur = 0, pending = false;
+
+// ── 今天的次數（存在這支手機）
+const today = new Date().toLocaleDateString('sv');
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+};
+let counts = store.get('pdt-count-' + today, {});
+
+// ── 類別與動作分頁
+const seriesBtns = [...document.querySelectorAll('.series button')];
+seriesBtns.forEach(b => b.onclick = () => { const i = EX.findIndex(e => e.series === b.dataset.s); select(i, true); });
+function renderTabs() {
+  const s = EX[cur].series;
+  seriesBtns.forEach(b => { b.setAttribute('aria-selected', b.dataset.s === s); });
+  $('tabs').innerHTML = '';
+  EX.forEach((e, i) => {
+    if (e.series !== s) return;
+    const b = document.createElement('button');
+    b.className = 'tab' + (e.ready ? '' : ' soon');
+    b.setAttribute('role', 'tab'); b.id = 'tab' + i; b.setAttribute('aria-selected', i === cur);
+    const done = e.target && (counts[e.id] || 0) >= e.target;
+    b.innerHTML = (e.ready ? `<img class="th" src="img/thumb-${e.id.toLowerCase()}.jpg" alt="" width="62" height="62">` : '<span class="th">製作中</span>') +
+      `<span><span class="no">${e.id}</span><span class="nm">${e.title}</span></span>` + (done ? '<span class="ok">✓ 今天完成</span>' : '');
+    b.onclick = () => select(i, true);
+    $('tabs').append(b);
+  });
+}
+
+function select(i, byUser) {
+  cur = i;
+  const e = EX[i];
+  renderTabs();
+  $('kicker').textContent = `${SER[e.series]}｜${e.id}`;
+  $('title').textContent = e.title;
+  $('chips').innerHTML = e.chips.map(t => `<span class="chip">${t}</span>`).join('');
+  let k = 0;
+  $('steps').innerHTML = e.steps.map(([t, s, cls]) => {
+    const n = cls === 'safe' ? '!' : cls === 'go' ? '▶' : ++k;
+    return `<li class="${cls}"><button data-t="${t}" ${e.ready ? '' : 'disabled'}><span class="n">${n}</span><span class="t"><span class="now">▶ 影片正在示範</span>${s}</span></button></li>`;
+  }).join('');
+  $('steps').querySelectorAll('button').forEach(b => b.onclick = () => { if (!e.ready) return; vid.currentTime = +b.dataset.t; play(); });
+  $('ticks').innerHTML = e.steps.map(([t]) => `<span class="tick" style="left:${t / e.total * 100}%"></span>`).join('');
+  const nb = (j, arrow) => j >= 0 && j < EX.length ? (arrow < 0 ? `← ${EX[j].id} ${EX[j].title}` : `${EX[j].id} ${EX[j].title} →`) : '';
+  $('prev').disabled = i === 0; $('next').disabled = i === EX.length - 1;
+  $('prev').textContent = nb(i - 1, -1); $('next').textContent = nb(i + 1, 1);
+  $('soon').classList.toggle('hide', e.ready);
+  $('bigplay').classList.toggle('hide', !e.ready);
+  $('ctrl').classList.toggle('hide', !e.ready);
+  $('tip').classList.toggle('hide', !e.ready);
+  vid.pause();
+  if (e.ready) { vid.poster = `img/poster-${e.id.toLowerCase()}.jpg`; vid.src = `videos/${e.id.toLowerCase()}.mp4`; vid.playbackRate = slow ? .8 : 1; }
+  else { vid.removeAttribute('src'); vid.removeAttribute('poster'); vid.load(); }
+  if (byUser) history.replaceState(null, '', '#' + e.id);
+  setupTools(e);
+  paint();
+}
+function play() { pending = true; vid.muted = false; const p = vid.play(); const done = () => { pending = false; paint(); }; if (p) p.then(done, done); else done(); }
+function fmt(s) { s = Math.max(0, Math.floor(s)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; }
+function paint() {
+  const e = EX[cur], t = vid.currentTime || 0, d = vid.duration || e.total;
+  $('player').classList.toggle('playing', !vid.paused || pending);
+  $('pp').innerHTML = vid.paused ? ICON.play : ICON.pause;
+  $('pp').setAttribute('aria-label', vid.paused ? '播放' : '暫停');
+  $('fill').style.width = (t / d * 100) + '%';
+  $('bar').setAttribute('aria-valuenow', Math.round(t / d * 100));
+  $('time').textContent = `${fmt(t)} / ${fmt(d)}`;
+  let on = -1;
+  if (e.ready && (t > 0 || !vid.paused)) e.steps.forEach(([a], k) => { const b = k + 1 < e.steps.length ? e.steps[k + 1][0] : d - 4; if (t >= a && t < b) on = k; });
+  $('steps').querySelectorAll('li').forEach((li, k) => li.classList.toggle('on', k === on));
+}
+['timeupdate', 'play', 'pause', 'loadedmetadata', 'seeked', 'ended'].forEach(ev => vid.addEventListener(ev, paint));
+(function tickLoop() { if (!vid.paused) paint(); requestAnimationFrame(tickLoop); })();
+
+$('bigplay').onclick = () => play();
+$('pp').onclick = () => { if (vid.paused) play(); else vid.pause(); };
+vid.onclick = () => vid.pause();
+let slow = false;
+$('slow').onclick = () => { slow = !slow; vid.playbackRate = slow ? .8 : 1; $('slow').classList.toggle('on', slow); $('slow').setAttribute('aria-pressed', slow); };
+$('fs').onclick = () => { const f = vid.closest('.frame'); (document.fullscreenElement ? document.exitFullscreen() : (f.requestFullscreen ? f.requestFullscreen() : vid.webkitEnterFullscreen?.())); };
+$('prev').onclick = () => select(cur - 1, true);
+$('next').onclick = () => select(cur + 1, true);
+const seekTo = x => { const r = $('bar').getBoundingClientRect(); vid.currentTime = Math.min(1, Math.max(0, (x - r.left) / r.width)) * (vid.duration || EX[cur].total); paint(); };
+$('bar').addEventListener('pointerdown', ev => { seekTo(ev.clientX); $('bar').setPointerCapture(ev.pointerId); });
+$('bar').addEventListener('pointermove', ev => { if (ev.buttons) seekTo(ev.clientX); });
+$('bar').addEventListener('keydown', ev => { const k = {ArrowRight: 5, ArrowLeft: -5}[ev.key]; if (k) { ev.preventDefault(); vid.currentTime += k; } });
+
+// ── 嗶聲（計時用）
+let actx = null;
+function beep(f = 880, d = .12) {
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const o = actx.createOscillator(), g = actx.createGain();
+    o.frequency.value = f; g.gain.setValueAtTime(.0001, actx.currentTime);
+    g.gain.exponentialRampToValueAtTime(.25, actx.currentTime + .01); g.gain.exponentialRampToValueAtTime(.0001, actx.currentTime + d);
+    o.connect(g).connect(actx.destination); o.start(); o.stop(actx.currentTime + d + .02);
+  } catch {}
+}
+
+// ── 練習工具
+function setupTools(e) {
+  $('micTool').classList.toggle('hide', e.tool !== 'mic');
+  $('holdTool').classList.toggle('hide', e.tool !== 'hold');
+  $('cntGoal').textContent = e.target ? ` / ${e.target}` : '';
+  $('cntSub').textContent = e.target ? `目標：每天 ${e.target} 次。每做完一次按一下，數字會記在這支手機上。` : '每做完一趟按一下，數字會記在這支手機上。';
+  paintCount();
+}
+function paintCount() {
+  const e = EX[cur], n = counts[e.id] || 0;
+  $('cnt').firstChild.textContent = n;
+  $('cntDone').textContent = e.target && n >= e.target ? '🎉 今天的目標完成了！' : '';
+}
+function setCount(n) {
+  const e = EX[cur];
+  counts[e.id] = Math.max(0, n); store.set('pdt-count-' + today, counts);
+  paintCount(); renderTabs();
+}
+$('plus').onclick = () => { setCount((counts[EX[cur].id] || 0) + 1); beep(660, .08); };
+$('minus').onclick = () => setCount((counts[EX[cur].id] || 0) - 1);
+$('reset').onclick = () => setCount(0);
+
+// 10 秒計時
+let holdTimer = null;
+$('holdBtn').onclick = () => {
+  if (holdTimer) { clearInterval(holdTimer); holdTimer = null; resetHold(); return; }
+  let left = 10; const t0 = performance.now();
+  $('holdBtn').textContent = '停止'; beep(988, .15);
+  holdTimer = setInterval(() => {
+    const el = (performance.now() - t0) / 1000, n = Math.max(0, 10 - Math.floor(el));
+    $('hring').setAttribute('stroke-dashoffset', 465 * (1 - Math.min(1, el / 10)));
+    if (n !== left) { left = n; $('hnum').textContent = n; if (n > 0) beep(880, .08); }
+    if (el >= 10) {
+      clearInterval(holdTimer); holdTimer = null; beep(1320, .4);
+      $('hnum').textContent = '好！'; $('holdBtn').textContent = '再一次';
+      setCount((counts[EX[cur].id] || 0) + 1);
+    }
+  }, 50);
+};
+function resetHold() { $('hnum').textContent = '10'; $('hring').setAttribute('stroke-dashoffset', 465); $('holdBtn').textContent = '開始 10 秒'; }
+
+// 音量計：分貝相對於「平常說話」校準值；+4 dB 以上算大聲，+18 dB 以上算太用力
+let mic = null, base = store.get('pdt-mic-base', -38), best = store.get('pdt-best', 0), sus = 0, susOn = 0, quiet = 0, cal = null;
+const DBMIN = -70, DBMAX = -5;
+const pct = db => Math.min(100, Math.max(0, (db - DBMIN) / (DBMAX - DBMIN) * 100));
+function zones() { $('meter').style.setProperty('--lo', pct(base + 4) + '%'); $('meter').parentElement.style.setProperty('--lo', pct(base + 4) + '%'); $('micTool').style.setProperty('--lo', pct(base + 4) + '%'); $('micTool').style.setProperty('--hi', pct(base + 18) + '%'); }
+zones(); $('best').textContent = best.toFixed(1);
+$('micBtn').onclick = async () => {
+  if (mic) { mic.stream.getTracks().forEach(t => t.stop()); mic.ctx.close(); mic = null; $('micBtn').textContent = '打開麥克風'; $('calBtn').disabled = true; $('lv').style.width = 0; return; }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({audio: {echoCancellation: false, noiseSuppression: false, autoGainControl: false}});
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const an = ctx.createAnalyser(); an.fftSize = 2048;
+    ctx.createMediaStreamSource(stream).connect(an);
+    mic = {stream, ctx, an, buf: new Float32Array(an.fftSize), last: performance.now(), db: DBMIN};
+    $('micBtn').textContent = '關閉麥克風'; $('calBtn').disabled = false;
+    $('micMsg').textContent = '麥克風已打開。聲音只在你的手機上分析，不會錄音，也不會上傳。';
+    micLoop();
+  } catch (err) {
+    $('micMsg').textContent = '沒辦法打開麥克風：請在瀏覽器設定允許這個網頁使用麥克風，再試一次。';
+  }
+};
+$('calBtn').onclick = () => {
+  if (!mic) return;
+  cal = {t0: performance.now(), vals: []};
+  $('calBtn').disabled = true; $('micMsg').textContent = '校準中：用「平常說話」的聲音說「啊——」3 秒…';
+};
+function micLoop() {
+  if (!mic) return;
+  mic.an.getFloatTimeDomainData(mic.buf);
+  let s = 0; for (const v of mic.buf) s += v * v;
+  const db = 20 * Math.log10(Math.sqrt(s / mic.buf.length) + 1e-9);
+  mic.db = mic.db * .7 + db * .3;
+  const now = performance.now(), dt = (now - mic.last) / 1000; mic.last = now;
+  const lv = $('lv'); lv.style.width = pct(mic.db) + '%';
+  lv.className = 'lv' + (mic.db >= base + 18 ? ' hi' : mic.db >= base + 4 ? ' ok' : '');
+  if (cal) {
+    if (now - cal.t0 > 600) cal.vals.push(mic.db);
+    if (now - cal.t0 > 3200) {
+      const v = cal.vals.sort((a, b) => a - b), med = v[Math.floor(v.length * .6)] ?? base;
+      if (med > -60) { base = med; store.set('pdt-mic-base', base); zones(); $('micMsg').textContent = '校準完成！現在用大聲、好聽的聲音說「啊」，讓音量條停在「大聲剛好」。'; }
+      else $('micMsg').textContent = '沒有聽到聲音，請靠近手機再校準一次。';
+      cal = null; $('calBtn').disabled = false;
+    }
+  } else {
+    // 長音計時：音量在「大聲剛好」以上持續多久
+    if (mic.db >= base + 4) { susOn += dt; quiet = 0; sus = susOn; }
+    else { quiet += dt; if (quiet > .35 && susOn > 0) { if (susOn > best) { best = susOn; store.set('pdt-best', best); } susOn = 0; } }
+    $('sus').textContent = sus.toFixed(1); $('best').textContent = Math.max(best, susOn).toFixed(1);
+  }
+  requestAnimationFrame(micLoop);
+}
+
+const fromHash = () => { const id = location.hash.slice(1).toUpperCase(); const i = EX.findIndex(e => e.id === id); return i >= 0 ? i : EX.findIndex(e => e.series === 'LOUD'); };
+window.addEventListener('hashchange', () => { if (fromHash() !== cur) select(fromHash(), false); });
+select(fromHash(), false);
+</script>
+</body>
+</html>
