@@ -176,6 +176,7 @@
     .tab .nm { font-size: 16px; }
     .time { display: none; }
     .how li { font-size: 15px; padding: 10px; }
+    .pager .pt { display: none; }
   }
 </style>
 </head>
@@ -353,9 +354,9 @@ function select(i, byUser) {
   }).join('');
   $('steps').querySelectorAll('button').forEach(b => b.onclick = () => { if (!e.ready) return; vid.currentTime = +b.dataset.t; play(); });
   $('ticks').innerHTML = e.steps.map(([t]) => `<span class="tick" style="left:${t / e.total * 100}%"></span>`).join('');
-  const nb = (j, arrow) => j >= 0 && j < EX.length ? (arrow < 0 ? `← ${EX[j].id} ${EX[j].title}` : `${EX[j].id} ${EX[j].title} →`) : '';
+  const nb = (j, arrow) => j >= 0 && j < EX.length ? (arrow < 0 ? `← ${EX[j].id}<span class="pt"> ${EX[j].title}</span>` : `${EX[j].id}<span class="pt"> ${EX[j].title}</span> →`) : '';
   $('prev').disabled = i === 0; $('next').disabled = i === EX.length - 1;
-  $('prev').textContent = nb(i - 1, -1); $('next').textContent = nb(i + 1, 1);
+  $('prev').innerHTML = nb(i - 1, -1); $('next').innerHTML = nb(i + 1, 1);
   $('soon').classList.toggle('hide', e.ready);
   $('bigplay').classList.toggle('hide', !e.ready);
   $('ctrl').classList.toggle('hide', !e.ready);

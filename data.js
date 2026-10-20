@@ -51,7 +51,7 @@ const EX = [
   "series": "LOUD",
   "title": "高音滑音",
   "total": 66.269,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 坐姿",
    "↗ 最高音停 5 秒",
@@ -92,7 +92,7 @@ const EX = [
   "series": "LOUD",
   "title": "低音滑音",
   "total": 66.608,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 坐姿",
    "↘ 最低音停 5 秒",
@@ -133,7 +133,7 @@ const EX = [
   "series": "LOUD",
   "title": "每日 10 句",
   "total": 62.449,
-  "ready": false,
+  "ready": true,
   "chips": [
    "📝 寫下 10 句",
    "🔁 每句說 5 次"
@@ -214,7 +214,7 @@ const EX = [
   "series": "BIG",
   "title": "左右大伸展",
   "total": 86.406,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 坐姿",
    "⏱ 停 10 秒・大聲數",
@@ -260,7 +260,7 @@ const EX = [
   "series": "BIG",
   "title": "向前大步",
   "total": 59.689,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 一手扶椅背",
    "🔁 每隻腳 8 次"
@@ -305,7 +305,7 @@ const EX = [
   "series": "BIG",
   "title": "側邊大步",
   "total": 58.425,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 一手扶椅背",
    "🔁 左右各 8 次"
@@ -350,7 +350,7 @@ const EX = [
   "series": "BIG",
   "title": "向後大步",
   "total": 59.445,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 一手扶椅背",
    "🔁 每隻腳 8 次"
@@ -395,7 +395,7 @@ const EX = [
   "series": "BIG",
   "title": "前後搖擺伸手",
   "total": 63.405,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 一手扶椅背",
    "🔁 每邊 10 次"
@@ -440,7 +440,7 @@ const EX = [
   "series": "BIG",
   "title": "左右搖擺伸手",
   "total": 48.843,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 一手扶椅背",
    "🔁 左右各 10 次"
@@ -485,7 +485,7 @@ const EX = [
   "series": "DAILY",
   "title": "坐到站",
   "total": 62.813,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🪑 穩固椅子",
    "🔁 每天 5 次"
@@ -535,7 +535,7 @@ const EX = [
   "series": "DAILY",
   "title": "大步走",
   "total": 51.545,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🏠 空曠走道",
    "👣 腳跟先著地"
@@ -585,7 +585,7 @@ const EX = [
   "series": "DAILY",
   "title": "大轉身",
   "total": 43.448,
-  "ready": false,
+  "ready": true,
   "chips": [
    "🏠 旁邊淨空",
    "↻ 跨大步畫大圓"
